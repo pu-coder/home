@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta charset="utf-8" />
+    <title>Login :: Campus Manager v3.0.0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="manifest" href="https://campus.dpssrinagar.com/manifest.json">
+    <!--
+    <link rel="shortcut icon" href="https://campus.dpssrinagar.com/assets/favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://campus.dpssrinagar.com/assets/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://campus.dpssrinagar.com/assets/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://campus.dpssrinagar.com/assets/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://campus.dpssrinagar.com/assets/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://campus.dpssrinagar.com/assets/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://campus.dpssrinagar.com/assets/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://campus.dpssrinagar.com/assets/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://campus.dpssrinagar.com/assets/favicons/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="https://campus.dpssrinagar.com/assets/favicons/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="https://campus.dpssrinagar.com/assets/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="https://campus.dpssrinagar.com/assets/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://campus.dpssrinagar.com/favicon-32x32.png" sizes="32x32">
+    <meta name="msapplication-TileColor" content="#3BA100">
+    <meta name="msapplication-TileImage" content="https://campus.dpssrinagar.com/assets/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="https://campus.dpssrinagar.com/assets/favicons/browserconfig.xml">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    -->
+    
+    <meta content="" name="description" />
+    
+    <link href="https://campus.dpssrinagar.com/assets/v3/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
+    <link href="https://campus.dpssrinagar.com/assets/v3/plugins/boostrapv3/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://campus.dpssrinagar.com/assets/v3/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="https://campus.dpssrinagar.com/assets/v3/framework/css/pages.min.css" rel="stylesheet" type="text/css" />
+    <link class="main-stylesheet" href="https://campus.dpssrinagar.com/assets/v3/framework/css/themes/corporate.min.css" rel="stylesheet" type="text/css" />
+    <link class="main-stylesheet" href="https://campus.dpssrinagar.com/assets/v3/css/style.css" rel="stylesheet" type="text/css" />
+    <!--[if lte IE 9]>
+        <link href="https://campus.dpssrinagar.com/assets/v3/framework/css/ie9.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <script type="text/javascript">
+    var baseUrl = 'https://campus.dpssrinagar.com/';
+    window.onload = function()
+    {
+      // fix for windows 8
+      if (navigator.appVersion.indexOf("Windows NT 6.2") != -1)
+        document.head.innerHTML += '<link rel="stylesheet" type="text/css" href="' + baseUrl + 'assets/v3/framework/css/windows.chrome.fix.css" />'
+    }
+    </script>
+  </head>
+  <body class="fixed-header   ">
+    <!-- START PAGE-CONTAINER -->
+    <div class="login-wrapper ">
+      <!-- START Login Background Pic Wrapper-->
+      <div class="bg-pic">
+        <!-- START Background Pic-->
+        <img src="https://campus.dpssrinagar.com/assets/v3/img/school-building.jpg" alt="" class="lazy">
+        <!-- END Background Pic-->
+        <!-- START Background Caption-->
+        <div class="bg-caption pull-bottom sm-pull-bottom text-white p-l-20 m-b-20">
+          <h2 class="semi-bold text-white text-shadow">
+					 Campus Manager - revolutionising the way we communicate.
+          </h2>
+        </div>
+        <!-- END Background Caption-->
+      </div>
+      <!-- END Login Background Pic Wrapper-->
+      <!-- START Login Right Container-->
+      <div class="login-container bg-white">
+        <div class="p-l-50 m-l-20 p-r-50 m-r-20 p-t-50 m-t-30 sm-p-l-15 sm-p-r-15 sm-p-t-40">
+          <img src="https://campus.dpssrinagar.com/assets/v3/img/logo.png" alt="logo" data-src="https://campus.dpssrinagar.com/assets/v3/img/logo.png" data-src-retina="https://campus.dpssrinagar.com/assets/v3/img/logo_2x.png" >
+          
+          <p class="m-t-20">Sign into your account</p>                    <!-- START Login Form -->
+<form id="form-login" class="form p-t-15" role="form" method="post" action="https://campus.dpssrinagar.com/user/login">
+    <!-- START Form Control-->
+
+    
+    <div class="form-group form-group-default">
+      <label>Login</label>
+      <div class="controls">
+        <input type="text" name="username" placeholder="User Name" class="form-control">
+      </div>
+    </div>
+
+    
+    <!-- END Form Control-->
+    <!-- START Form Control-->
+    <div class="form-group form-group-default">
+      <label>Password</label>
+      <div class="controls">
+        <input type="password" class="form-control" name="password" placeholder="Credentials">
+      </div>
+    </div>
+    <!-- START Form Control-->
+    <div class="row">
+      <div class="col-md-6 no-padding">
+        <div class="checkbox ">
+          <input type="checkbox" value="1" name="remember" id="remember">
+          <label for="remember">Keep Me Signed in</label>
+        </div>
+      </div>
+      <div class="col-md-6 text-right">
+        <a href="https://campus.dpssrinagar.com/user/forgot" class="text-info small">Forgot Password?</a><br/>
+        <a href="mailto:webadmin@dpssrinagar.com" class="text-info small">Help? Contact Support</a>
+      </div>
+    </div>
+    <!-- END Form Control-->
+    <button class="btn btn-primary btn-cons m-t-10" type="submit">Sign in</button>
+</form>
+<!--END Login Form-->
+          <div class="pull-bottom sm-pull-bottom">
+            <div class="m-b-30 p-r-80 sm-m-t-20 sm-p-r-15 sm-p-b-20 clearfix">
+              <div class="col-sm-3 col-md-2 no-padding">
+                <img alt="" class="m-t-5" height="60" src="https://campus.dpssrinagar.com/assets/v3/img/auth-footer-logo.jpg" width="60">
+              </div>
+              <div class="col-sm-9 no-padding m-t-10">
+                <p>
+                <small>
+                  &copy; 2020 Delhi Public School, Srinagar. All rights reserved. Campus Manager v3.0.0 by <a href="http://www.freshcode.in">FreshCode</a>
+		        		</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END Login Right Container-->
+    </div>
+    <!-- END PAGE CONTAINER -->
+
+    <script src="https://campus.dpssrinagar.com/assets/v3/plugins/pace/pace.min.js" type="text/javascript"></script>
+    <script src="https://campus.dpssrinagar.com/assets/v3/js/manup.min.js" type="text/javascript"></script>
+    <script src="https://campus.dpssrinagar.com/assets/v3/plugins/jquery/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="https://campus.dpssrinagar.com/assets/v3/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="https://campus.dpssrinagar.com/assets/v3/framework/js/pages.min.js"></script>
+    <script src="https://campus.dpssrinagar.com/assets/v3/js/form.validate.js"></script>
+    <script>
+    $(function()
+    {
+      $('.form').validate();
+    });
+    </script>
+  </body>
+</html>
