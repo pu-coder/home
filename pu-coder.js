@@ -1,2 +1,6 @@
-var yourName = prompt("Please enter your Name?")
-alert("Welcome" + yourName + "!" + " Thankyou for visiting my repositorie (website).")
+var firstName = prompt("Please enter your name:");
+
+if (firstName != null) {
+  document.getElementById("demo").innerHTML =
+  "Welcome " + firstName + "!" + "," + , + "Thankyou for visiting my website.";
+}
